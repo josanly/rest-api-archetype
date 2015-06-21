@@ -43,8 +43,8 @@ Install the REST API by running:
 ## Contribute
 ----------
 
-- Issue Tracker: github.com/rest-api-generic/rest-api-generic/issues
-- Source Code: github.com/rest-api-generic/rest-api-generic
+- Issue Tracker: https://github.com/josanly/rest-api-archetype/issues
+- Source Code: https://github.com/josanly/rest-api-archetype
 
 ## Support
 -------
