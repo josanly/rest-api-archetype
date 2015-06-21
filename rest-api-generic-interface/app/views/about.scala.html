@@ -1,0 +1,77 @@
+@(title: String, subTitle: String, appName: String, vappVersion: String, nav: String)
+
+@main(title, subTitle, nav) {
+
+<div class="jumbotron">
+  <h1>
+  	@title
+  	<br />
+  	<small>@subTitle</small>
+  </h1>
+  <p>short description ...</p>
+</div>
+<div>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Features</h2>
+			<ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">1.0.0-SNAPSHOT</span>
+          <h4 class="list-group-item-heading">Web interface base</h4>
+          <p class="list-group-item-text">First minimal structure to create a responsive web interface to present your REST API.</p>
+        </li>
+        <li class="list-group-item">
+          <span class="badge">1.0.0-SNAPSHOT</span>
+          <h4 class="list-group-item-heading">A simple Core app is defined in this example (rest-api-generic-core)</h4>
+          <p class="list-group-item-text">It is important to split into 2 modules the core and the wui. Like that you can develop and release each over independently.</p>
+        </li>
+        <li class="list-group-item">
+          <span class="badge">1.0.0-SNAPSHOT</span><span class="badge">New</span>
+          <h4 class="list-group-item-heading">Core and Web API fully integrated in Maven project architecture</h4>
+          <p class="list-group-item-text">Using the maven-play2 plugin, you can develop, build and deploy your application using the Maven project lifecycle. (thanks to <a href="https://github.com/orrsella/play-maven-integration">Orr Sella</a>'s job)</p>
+        </li>
+        <li class="list-group-item">
+          <span class="badge">1.0.0-SNAPSHOT</span><span class="badge">New</span>
+          <h4 class="list-group-item-heading">REST API documentation</h4>
+          <p class="list-group-item-text">A page containing all enable requests with a little description of method/action and return type. It uses <a href="http://swagger.io/">Swagger</a></p>
+        </li>
+        <li class="list-group-item">
+          <span class="badge">1.0.0-SNAPSHOT</span>
+          <h4 class="list-group-item-heading">Project documentation</h4>
+          <p class="list-group-item-text">All description of this project. It uses <a href="https://readthedocs.org/">Readthedocs</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h2>Technologies</h2>
+    <ul>
+     <li><a href="https://www.playframework.com/" target="blank" >Play 2.1.5</a></li>
+     <li><a href="http://getbootstrap.com/" target="blank" >Bootstrap 3</a></li>
+     <li><a href="https://angularjs.org/" target="blank" >AngularJS 1.3.14</a></li>
+     <li><a href="https://jquery.com/" target="blank" >JQuery 1.11.2</a></li>
+     <li><a href="http://swagger.io/" target="blank" >Swagger</a></li>
+     <li><a href="https://readthedocs.org/" target="blank" >Read the docs</a></li>
+     <li><a href="https://maven.apache.org/" target="blank" >Maven</a></li>
+   </ul>
+ </div>
+ <div class="row">
+  <div class="col-md-6">
+   <h2>Langages</h2>
+   <ul>
+    <li>JAVA (JSE)</li>
+    <li>Scala</li>
+    <li>CSS 3</li>
+    <li>HTML 5</li>
+    <li>JavaScript</li>
+  </ul>
+</div>
+<div class="col-md-6">
+  <h2>Licences</h2>
+  <ul>
+    <li>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></li>
+  </ul>
+</div>
+</div>
+</div>
+}
