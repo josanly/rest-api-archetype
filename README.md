@@ -1,14 +1,24 @@
 # REST API project
----------------------------------------
 
-This project has been developped to give a simple maven archetype to build a REST API using Java and Play Framework.
+This project has been developped to give a simple maven archetype to build a RESTful API using Java and Play Framework.
 
 Look how easy it is to use:
 
-    describe here the installation and cmd to use the app
+    # packaging archetype
+    mvn archetype:jar 
+    # install archetype in local maven archetype catalog
+    mvn archetype:update-local-catalog 
+    # create a new project form this archetype (interactive mode)
+    mvn archetype:generate 
+
+To deploy your own RESTful API application:
+
+    unzip /path/to/<project-archive> /path/to/target/dir/.
+    /path/to/target/dir/<project-name>/start -Dhttp.port=1234 -Dhttp.address=127.0.0.1 -Dconfig.file=/opt/conf/prod.conf -Dlogger.file=/opt/prod/prod-logger.xml -Dpidfile.path=/var/run/play.pid
+
+For more details about the deployment of a play application, refer to the [Play official documentation](https://www.playframework.com/documentation/2.1.x/ProductionConfiguration)
 
 ## Features
---------
 
 ### Functionnalities
 - Maven archetype
@@ -20,8 +30,7 @@ Look how easy it is to use:
 - Using Play framework to generate an embedded web app with no dependency against OS
 - Using CSS Bootstrap framework for styling
 
-## Installation
-------------
+## Archetype Installation
 
 Compile sources from scratch:
 
@@ -38,23 +47,43 @@ Deploy the project:
 
 Install the REST API by running:
 
-    install rest-api-project
+    unzip rest-api-project.zip
+    ./rest-api-project/start 
+    firefox http://localhost:9000/
+
+## Project generated from the archetype Installation
+
+    # create a new project form this archetype (interactive mode)
+    mvn archetype:generate 
+
+Do some development :)
+
+    # Compile all sources from scratch
+    mvn clean install
+    # Run locally your application (in dev mode)
+    mvn play2:run -pl rest-api-generic-interface
+    # Create your project artifact for deployment
+    mvn deploy
+
+Deploy your own RESTful API application:
+
+    unzip /path/to/<project-archive> /path/to/target/dir/.
+    /path/to/target/dir/<project-name>/start -Dhttp.port=1234 -Dhttp.address=127.0.0.1 -Dconfig.file=/opt/conf/prod.conf -Dlogger.file=/opt/prod/prod-logger.xml -Dpidfile.path=/var/run/play.pid
 
 ## Contribute
-----------
 
 - Issue Tracker: https://github.com/josanly/rest-api-archetype/issues
 - Source Code: https://github.com/josanly/rest-api-archetype
 
 ## Support
--------
 
 If you are having issues, please let us know.
 
 We have a mailing list located at: rest-api-project@google-groups.com
 
+-------------------
+
 ## License
--------
 
 #### The project is licensed under the GPL license.
 
