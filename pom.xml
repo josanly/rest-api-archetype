@@ -4,7 +4,7 @@
 
   <groupId>org.josanly.archetypes</groupId>
   <artifactId>play-rest-api-archetype</artifactId>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.1.0</version>
   <packaging>maven-archetype</packaging>
 
   <name>play-rest-api-archetype</name>
@@ -13,6 +13,7 @@
     <connection>scm:git:git@github.com:josanly/rest-api-archetype.git</connection>
     <url>scm:git:git@github.com:josanly/rest-api-archetype.git</url>
     <developerConnection>scm:git:git@github.com:josanly/rest-api-archetype.git</developerConnection>
+    <tag>play-rest-api-archetype-1.1.0</tag>
   </scm>
   <build>
     <plugins>
