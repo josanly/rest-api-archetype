@@ -1,0 +1,12 @@
+# ignore all eclipse file
+.eclipse
+target/
+.cache
+.history
+.idea
+.idea_modules
+.classpath
+.project
+.settings
+
+# exceptions

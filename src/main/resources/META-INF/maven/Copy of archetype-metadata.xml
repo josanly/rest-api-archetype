@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="play-rest-api-generic"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>project</directory>
+      <includes>
+        <include>**/*.properties</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>project</directory>
+      <includes>
+        <include>**/*.sbt</include>
+        <include>**/*.scala</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+        <include>README.md</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="rest-api-generic-core" dir="rest-api-generic-core" name="rest-api-generic-core">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/test/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="rest-api-generic-interface" dir="rest-api-generic-interface" name="rest-api-generic-interface">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>app/models</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>app/controllers</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>public/swagger-2.1.1</directory>
+          <includes>
+            <include>**/*.html</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>test</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>conf</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>app/exeption</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>app/views</directory>
+          <includes>
+            <include>**/*.html</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>public/swagger-2.1.1</directory>
+          <includes>
+            <include>**/*.</include>
+            <include>**/*.css</include>
+            <include>**/*.gif</include>
+            <include>**/*.svg</include>
+            <include>**/*.ttf</include>
+            <include>**/*.md</include>
+            <include>**/*.png</include>
+            <include>**/*.js</include>
+            <include>**/*.woff2</include>
+            <include>**/*.eot</include>
+            <include>**/*.woff</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>public/javascripts</directory>
+          <includes>
+            <include>**/*.js</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>conf</directory>
+          <includes>
+            <include>**/*.</include>
+            <include>**/*.conf</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>public/stylesheets</directory>
+          <includes>
+            <include>**/*.css</include>
+            <include>**/*.svg</include>
+            <include>**/*.ttf</include>
+            <include>**/*.js</include>
+            <include>**/*.woff2</include>
+            <include>**/*.eot</include>
+            <include>**/*.map</include>
+            <include>**/*.woff</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>public/images</directory>
+          <includes>
+            <include>**/*.svg</include>
+            <include>**/*.png</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>README</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>

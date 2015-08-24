@@ -1,0 +1,15 @@
+@(title: String, subTitle: String, nav: String)
+
+@main(title, subTitle, nav) {
+    
+<div class="jumbotron">
+  <h1>@title</h1>
+  <p>This project has been developed to give a simple maven archetype to build a REST API using Java and Play Framework</p>
+  <p>
+  	<a class="btn btn-primary btn-lg" href="http://localhost:8000" target="_blank" role="button">Learn more</a>
+  	<a class="btn btn-primary btn-lg" href="@routes.Application.about()" role="button">About</a>
+  	<a class="btn btn-primary btn-lg" href="@routes.Application.documentation()" role="button">API Documentation</a>
+  </p>
+</div>
+
+}
