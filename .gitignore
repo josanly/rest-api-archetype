@@ -1,33 +1,12 @@
 # ignore all eclipse file
-rest-api-generic-core/.classpath
-rest-api-generic-core/.project
-rest-api-generic-core/target/
-
-# Ignore Play! working directory #
-rest-api-generic-interface/bin/
-rest-api-generic-interface/db
-rest-api-generic-interface/.eclipse
-rest-api-generic-interface/lib/
-rest-api-generic-interface/logs/
-rest-api-generic-interface/modules/
-rest-api-generic-interface/project/project/
-rest-api-generic-interface/project/target/
-rest-api-generic-interface/target/
-rest-api-generic-interface/tmp/
-rest-api-generic-interface/test-result/
-rest-api-generic-interface/server.pid
-rest-api-generic-interface/*.iml
-rest-api-generic-interface/*.eml
-rest-api-generic-interface/dist/
-rest-api-generic-interface/.cache
-rest-api-generic-interface/.history
-rest-api-generic-interface/.idea
-rest-api-generic-interface/out
-rest-api-generic-interface/.idea_modules
-rest-api-generic-interface/.classpath
-rest-api-generic-interface/.project
-rest-api-generic-interface/RUNNING_PID
-rest-api-generic-interface/.settings
+.eclipse
+target/
+.cache
+.history
+.idea
+.idea_modules
+.classpath
+.project
+.settings
 
 # exceptions
-!rest-api-generic-interface/public/swagger-2.1.1/dist/

@@ -1,9 +1,11 @@
 # REST API project
 
-This project has been developped to give a simple maven archetype to build a RESTful API using Java and Play Framework.
+This project has been developed to give a simple maven archetype to build a RESTful API using Java and Play Framework.
 
 Look how easy it is to use:
 
+	# compilation 
+	mvn clean install
     # packaging archetype
     mvn archetype:jar 
     # install archetype in local maven archetype catalog
@@ -11,49 +13,45 @@ Look how easy it is to use:
     # create a new project form this archetype (interactive mode)
     mvn archetype:generate 
 
-To deploy your own RESTful API application:
-
-    unzip /path/to/<project-archive> /path/to/target/dir/.
-    /path/to/target/dir/<project-name>/start -Dhttp.port=1234 -Dhttp.address=127.0.0.1 -Dconfig.file=/opt/conf/prod.conf -Dlogger.file=/opt/prod/prod-logger.xml -Dpidfile.path=/var/run/play.pid
-
-For more details about the deployment of a play application, refer to the [Play official documentation](https://www.playframework.com/documentation/2.1.x/ProductionConfiguration)
 
 ## Features
 
-### Functionnalities
+### Functionalities
 - Maven archetype
 - Play Framework commands integrated in Maven lifecycle
+- Multi-module application (core and RESTful API)
 
 
 ### Technical features
-- Swagger framework to give an interactive documentation of REST API
+- Swagger framework to give an interactive documentation of REST API (light AJAX client)
 - Using Play framework to generate an embedded web app with no dependency against OS
 - Using CSS Bootstrap framework for styling
+- RESTful architecture
+
 
 ## Archetype Installation
 
 Compile sources from scratch:
 
-    cd rest-api-project/
     mvn clean install 
+    # packaging archetype
+    mvn archetype:jar 
+    # install archetype in local maven archetype catalog
+    mvn archetype:update-local-catalog 
+    # create a new project form this archetype (interactive mode)
+    mvn archetype:generate 
 
-Run the interface:
+Package archetype:
 
-    mvn play2:run -pl rest-api-generic-interface
+    mvn archetype:jar
 
-Deploy the project:
+Deploy in local catalog:
 
-    mvn deploy
-
-Install the REST API by running:
-
-    unzip rest-api-project.zip
-    ./rest-api-project/start 
-    firefox http://localhost:9000/
+    mvn archetype:update-local-catalog 
 
 ## Project generated from the archetype Installation
 
-    # create a new project form this archetype (interactive mode)
+    # create a new project from this archetype (interactive mode)
     mvn archetype:generate 
 
 Do some development :)
@@ -65,7 +63,7 @@ Do some development :)
     # Create your project artifact for deployment
     mvn deploy
 
-Deploy your own RESTful API application:
+Deploy your own Web User Interface application:
 
     unzip /path/to/<project-archive> /path/to/target/dir/.
     /path/to/target/dir/<project-name>/start -Dhttp.port=1234 -Dhttp.address=127.0.0.1 -Dconfig.file=/opt/conf/prod.conf -Dlogger.file=/opt/prod/prod-logger.xml -Dpidfile.path=/var/run/play.pid
